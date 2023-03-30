@@ -9,6 +9,7 @@
         /* Add your custom CSS styles here */
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
         }
 
         header {
@@ -46,14 +47,31 @@
             text-align: center;
         }
 
+        .hero img {
+            max-width: 100%;
+            height: auto;
+        }
+
         .services {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
             padding: 50px;
         }
 
         .service {
-            width: 30%;
+            flex: 1 1 250px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .service img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .about, .web3 {
+            padding: 50px;
             text-align: center;
         }
 
@@ -72,35 +90,19 @@
         <nav>
             <ul>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
         <h2>Welcome to Web3 Digital Marketing</h2>
+        <img src="https://via.placeholder.com/1200x400" alt="Web3 banner image">
         <p>Revolutionize your online presence with decentralized marketing strategies.</p>
     </section>
 
     <section class="services" id="services">
         <div class="service">
-            <h3>Cryptocurrency Integration</h3>
-            <p>Accept popular cryptocurrencies as payment, expanding your customer base.</p>
-        </div>
-        <div class="service">
-            <h3>NFT Marketing</h3>
-            <p>Create and promote unique NFTs for your brand, tapping into the growing market.</p>
-        </div>
-        <div class="service">
-            <h3>dApp Promotion</h3>
-            <p>Increase awareness and adoption of your decentralized applications with targeted campaigns.</p>
-        </div>
-    </section>
+            <img src="https://via.placeholder.com/250x
 
-    <footer>
-        &copy; 2023 Web3 Digital Marketing. All rights reserved.
-    </footer>
-</body>
-
-</html>
